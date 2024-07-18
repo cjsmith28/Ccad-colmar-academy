@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid black;   /* temp border to help with positioning */
 }
 
 html {
@@ -29,6 +30,7 @@ header {
     padding-right: 8px;
     align-items: center;
     justify-items: center;
+    justify-content: space-between;
 }
 
 nav > ul {
@@ -38,4 +40,25 @@ nav > ul {
 
 nav li {
     padding: 0 16px;
+}
+
+/* SECTION 1 */
+
+.image-container {
+    display: flex;
+    background-color: lightgrey;
+}
+
+.image-container img {
+    width: 60%;
+    height: 100%;
+    padding: 24px 32px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
 }
