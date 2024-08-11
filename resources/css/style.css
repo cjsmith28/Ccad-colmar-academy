@@ -65,7 +65,7 @@ nav a {
     color: var(--light-grey);
 }
 
-/* SECTION 1 */
+/* SECTION 1 Start Here*/
 
 .start-container {
     display: flex;
@@ -118,4 +118,55 @@ nav a {
 .start-right a {
     text-decoration: none;
     color: white;
+}
+
+
+/* Section 2 News & Info */
+
+.news-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    color: var(--dark-grey);
+}
+
+
+/* News left */
+
+.news-left {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+}
+
+.news-left img {
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.news-left-info h2,p {
+    padding: 24px 2%;
+}
+
+
+/* News Right */
+
+.news-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-right img {
+    width: 10rem;
+}
+
+.orientation, .campus, .guest {
+    display: flex;
+}
+
+.orientation-info, .campus-info, .guest-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;
 }
