@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;  /* temp border to help with positioning */
+      /* temp border to help with positioning */
 }
 
 
@@ -168,6 +168,21 @@ nav a {
 
 .news-right img {
     width: 14rem;
+}
+
+.news-right h4 {
+    font-size: 140%;
+}
+
+.news-right button {
+    border: 0;
+    background: none;
+    font-size: 100%;
+}
+
+.news-right p {
+    font-size: 120%;
+    line-height: 2rem;
 }
 
 .orientation, .campus, .guest {
