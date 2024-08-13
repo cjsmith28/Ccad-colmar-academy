@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: 1px solid black; /* temp border to help with positioning */
+    border: 1px solid black; /* temp border to help with positioning */
 }
 
 
@@ -261,3 +261,46 @@ nav a {
 }
 
 
+/* Section 4 Thesis */
+
+.thesis {
+    padding: 32px 24px;
+    color: var(--dark-grey);
+}
+
+.thesis h1 {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.thesis-container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.thesis-left {
+    padding: 0px 24px 24px;
+}
+
+.thesis-left video {
+    width: 100%;
+}
+
+.thesis-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.fisma {
+    background-color: var(--lighter-grey);
+}
+
+.fisma, .newyork {
+    display: flex;
+    align-items: center;
+}
+
+.thesis-right img {
+    width: 14rem;
+    padding: 16px;
+}
