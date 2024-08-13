@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-      /* temp border to help with positioning */
+    /*border: 1px solid black; /* temp border to help with positioning */
 }
 
 
@@ -146,10 +146,12 @@ nav a {
 .news-left-info p {
     padding: 24px 0;
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
 #source {
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .news-left-info h2 {
@@ -163,7 +165,6 @@ nav a {
 .news-right {
     display: flex;
     flex-direction: column;
-    padding: 16px 0;
 }
 
 .news-right img {
@@ -183,6 +184,7 @@ nav a {
 .news-right p {
     font-size: 120%;
     line-height: 2rem;
+    font-weight: 300;
 }
 
 .orientation, .campus, .guest {
@@ -190,7 +192,13 @@ nav a {
     border: 1px solid var(--lighter-grey);
 }
 
-.orientation-img, .campus-img, .guest-img {
+
+.orientation-img {
+    justify-content: center;
+    padding: 32px 16px 16px; 
+}
+
+.campus-img, .guest-img {
     justify-content: center;
     padding: 16px;
 }
@@ -206,6 +214,50 @@ nav a {
 
 .guest {
     background-color: var(--lighter-grey);
+}
+
+
+/* Section 3 Start Learning & Courses */
+
+.sl-container {
+    padding: 0 72px 32px;
+    background-color: var(--lighter-grey);
+    color: var(--dark-grey);
+}
+
+.sl-container h1 {
+    text-align: center;
+    padding: 32px;
+}
+
+.sl-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.sl-course {
+    background-color: white;
+}
+
+.sl-grid-container img {
+    width: 100%;
+}
+
+.sl-info {
+    height: 230px;
+}
+
+.sl-info h4 {
+    padding: 16px;
+    font-size: 140%;
+}
+
+.sl-info p {
+    padding: 8px 16px;
+    font-size: 120%;
+    line-height: 2rem;
+    font-weight: 300;
 }
 
 
