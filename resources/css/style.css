@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black; /* temp border to help with positioning */
+    /*border: 1px solid black; /* temp border to help with positioning */
 }
 
 
 html {
     align-items: center;
     font-family: Roboto;
+    color: var(--dark-grey);
 }
 
 :root {
@@ -100,24 +101,25 @@ nav a {
     padding: 0 2%;
 }
 
-.start-right > h1, h4 {
-    padding: 5% 0;
-    color: var(--dark-grey);
-}
-
 .start-right h1 {
     font-size: 3rem;
     font-weight: 900;
+    padding: 32px 0;
 }
 
 .start-right h4 {
     font-size: 1.5rem;
     font-weight: 500;
+    padding-bottom: 32px;
 }
 
 .start-right a {
     text-decoration: none;
     color: white;
+}
+
+.start-right button {
+    border: none;
 }
 
 
@@ -173,6 +175,7 @@ nav a {
 
 .news-right h4 {
     font-size: 140%;
+    padding: 0;
 }
 
 .news-right button {
@@ -185,6 +188,7 @@ nav a {
     font-size: 120%;
     line-height: 2rem;
     font-weight: 300;
+    padding: 8px 0;
 }
 
 .orientation, .campus, .guest {
@@ -228,6 +232,7 @@ nav a {
 .sl-container h1 {
     text-align: center;
     padding: 32px;
+    font-size: 3rem;
 }
 
 .sl-grid-container {
@@ -268,9 +273,21 @@ nav a {
     color: var(--dark-grey);
 }
 
+.thesis h4 {
+    font-size: 140%;
+    padding: 8px 0;
+}
+
+.thesis p {
+    font-size: 120%;
+    font-weight: 300;
+    padding: 8px 0;
+}
+
 .thesis h1 {
     text-align: center;
     padding-bottom: 32px;
+    font-size: 3rem;
 }
 
 .thesis-container {
@@ -284,6 +301,10 @@ nav a {
 
 .thesis-left video {
     width: 100%;
+}
+
+.thesis-left h4 {
+    padding: 24px 0 8px 0;
 }
 
 .thesis-right {
@@ -303,4 +324,13 @@ nav a {
 .thesis-right img {
     width: 14rem;
     padding: 16px;
+}
+
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--light-grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
 }
