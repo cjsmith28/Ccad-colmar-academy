@@ -18,6 +18,10 @@ html {
     --lightest-grey: #e9e9e9;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 /*****HEADER*****/
 
 nav {
@@ -80,23 +84,16 @@ nav a {
     height: 3rem;
     cursor: pointer;
     color: white;
-    font-family: Roboto;
-    font-size: large;
-}
-
-.start-left {
-    width: 60%;
 }
 
 .start-left img {
-    width: 100%;
+    width: 85%;
 }
 
 .start-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
     margin: 0 1%;
     padding: 0 2%;
 }
@@ -164,6 +161,10 @@ nav a {
 
 /* News Right */
 
+.campus-img-mobile, .guest-img-mobile, .orientation-img-mobile {
+    display: none;
+}
+
 .news-right {
     display: flex;
     flex-direction: column;
@@ -222,6 +223,10 @@ nav a {
 
 
 /* Section 3 Start Learning & Courses */
+
+.sl-mobile {
+    display: none;
+}
 
 .sl-container {
     padding: 0 72px 32px;
@@ -333,4 +338,136 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
+}
+
+
+
+/* Mobile Display */
+
+@media only screen and (max-width: 480px) {
+
+    /*Nav section*/
+    nav > .logo, nav > ul {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 65%;
+        margin: 2% 3%;
+    }
+
+    /* Section 1 Start */
+    .start-container {
+        flex-direction: column;
+        padding: 0 0 32px 0;
+    }
+
+    .start-container img {
+        width: 100%;
+    }
+
+    .start-right h1 {
+        padding: 32px 16px;
+    }
+
+    .start-right h4 {
+        padding: 0 16px 24px;
+    }
+
+    .start-right button {
+        background-color: var(--light-grey);
+    }
+
+
+    /* Section 2 News & info*/
+
+    .news-left {
+        display: none;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-right * {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        background-color: white;
+    }
+
+    .campus-img, .guest-img, .orientation-img {
+        display: none;
+    }
+
+    .news-right img {
+        width: 100%;
+    }
+
+    .campus-img-mobile, .guest-img-mobile, .orientation-img-mobile {
+        padding: 16px;
+    }
+
+    .campus-info, .guest-info, .orientation-info {
+        padding: 0 32px 48px;
+    }
+
+
+    /* Section 3 Start Learning */
+
+    .sl-grid-container {
+        display: none;
+    }
+
+    .sl-container {
+        background-color: white;
+        border: 1px solid var(--lighter-grey);
+        padding: 0 16px 32px;
+    }
+
+    .sl-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sl-mobile h2 {
+        padding: 16px 16px 24px;
+        background-color: var(--lighter-grey);
+        margin: 4px 0;
+    }
+
+
+    /* Section 4 Thesis */
+
+    .thesis-right, .thesis-left h4, .thesis-left p {
+        display: none;
+    }
+
+    .thesis-container {
+        grid-template-columns: 1fr;
+    }
+
+    .thesis, .thesis-left {
+        padding: 0;
+    }
+     .thesis h1 {
+        padding: 32px 0 16px;
+     }
+
+
+     /* Footer */
+
+     .footer-right {
+        display: none;
+     }
+
+     footer {
+        margin-top: 24px;
+        border: none;
+     }
+
+
 }
